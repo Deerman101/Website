@@ -1,0 +1,303 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+/*Обнуление настроек браузера, мб поможет*/
+
+/*Общее*/
+
+/*Intro*/
+
+.intro{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(37, 214, 205);
+    background-size: cover;
+    opacity: 0.9;
+}
+.intro_in{
+    width: 40%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.8;
+}
+.intro_second_tittle{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.intro_second_text{
+    font-weight: 100;
+    font-size: 10px;
+    text-transform: lowercase;
+    line-height: 1;
+    text-align: center;
+    margin-top: 3px;
+}
+.intro_second_tittle:after{
+    content: "";
+    display: block;
+    margin: 20px auto 0;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+}
+
+/*Header*/
+
+.header{
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 0.9;
+}
+.header_in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Ico*/
+
+.ico{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+.ico:hover{
+    color:rgb(37, 214, 205);
+}
+
+/*Navigation*/
+
+.navigation{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.navlink{
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    text-underline-offset: 10px;
+    text-decoration: 1px underline black;
+    transition: color 0.2s;
+}
+.navlink:hover{
+    color: rgb(37, 214, 205);
+    text-underline-offset: 10px;
+    text-decoration: 1px underline rgb(37, 214, 205);
+}
+
+/*Conteiner*/
+
+.conteiner {
+    width: 100%;
+    max-width: 1200px;
+	line-height: 1.2;
+    margin: 0 auto;
+}
+
+/*Бронирование*/
+
+.intro_text_tittle{
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 20%;
+    margin: 40px auto 0 auto;
+    border: 1px solid;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.into_text{
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.footer{
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 0.9;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+
+}
+.footer_text{
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/*Галерея*/
+
+.intro_down_main_tittle{
+    font-weight: 100;
+    font-size: 10px;
+    text-transform: lowercase;
+    line-height: 1;
+    text-align: center;
+    margin-top: 3px;
+}
+.sllider{
+    margin: 20px auto;
+    text-align: center;
+    width: 380px;
+    height: 250px;
+    overflow: hidden;
+    border: 5px solid white;
+}
+.navigation_galery {
+    position: absolute;
+    bottom: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar {
+    width: 30px;
+    height: 8px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: white;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+ 
+.bar:hover {
+    opacity: 1;
+    transform:scale(1.1);
+}
+ 
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+.slide {
+    width: 25%;
+    transition: all 0.6s ease;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+.video{
+    width: 380px;
+    height: 250px;
+    margin: 0 auto;
+}
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+ 
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+ 
+#r3:checked ~ .s1 {
+    margin-left: -50%;
+}
+ 
+#r4:checked ~ .s1 {
+    margin-left: -75%;
+}                    
+
+/*Партнёр*/
+
+.intro_part{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+    background-size: cover;
+    opacity: 0.9;
+}
+.navlink_part{
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    text-underline-offset: 10px;
+    text-decoration: 1px underline black;
+    transition: color 0.2s;
+}
+.navlink_part:hover{
+    color: burlywood;
+    text-underline-offset: 10px;
+    text-decoration: 1px underline burlywood;
+}
+.ico_part{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+.ico_part:hover{
+    color:burlywood;
+}
+.intro_text_tittle_part{
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 20%;
+    margin: 40px auto 0 auto;
+    border: 1px solid;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.into_text_part{
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 100%;
+    background-color: white;
+    color: black;
+}

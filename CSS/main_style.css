@@ -1,0 +1,324 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+/*Обнуление настроек браузера, мб поможет*/
+
+/*Conteiner*/
+
+.conteiner {
+    width: 100%;
+    max-width: 1200px;
+	line-height: 1.2;
+    margin: 0 auto;
+    
+}
+
+/*Intro*/
+
+.intro{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../FOTO/main.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+.intro_in{
+    width: 40%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.8;
+}
+.intro_main_tittle{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.intro_down_main_tittle{
+    font-weight: 100;
+    font-size: 10px;
+    text-transform: lowercase;
+    line-height: 1;
+    text-align: center;
+    margin-top: 3px;
+}
+.intro_main_tittle:after{
+    content: "";
+    display: block;
+    margin: 20px auto 0;
+    width: 100px;
+    height: 3px;
+    background-color: white;
+}
+
+/*Header*/
+
+.header{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 0.9;
+}
+.header_in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Ico*/
+
+.ico{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+.ico:hover{
+    color:white;
+}
+
+/*Navigation*/
+
+.navigation{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.navlink{
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    text-underline-offset: 10px;
+    text-decoration: 1px underline black;
+    transition: color 0.2s;
+}
+.navlink:hover{
+    color: white;
+    text-underline-offset: 10px;
+    text-decoration: 1px underline white;
+}
+
+/*Botton*/
+
+.btn{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 35px;
+    display: inline-block;
+    vertical-align:bottom;
+    padding: 5px 20px;
+    margin: 30px auto;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    transition: color 0.2s;
+    opacity: 0.8;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    border:0.5px solid black;
+}
+
+/*Отзыв*/
+
+.intro_otz{
+    color: black;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/20190502_Newhaven_to_Dieppe_Ferry_3.jpg/1200px-20190502_Newhaven_to_Dieppe_Ferry_3.jpg);
+}
+.otz_intro_main_tittle{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.otz_intro_main_tittle:after{
+    content: "";
+    display: block;
+    margin: 20px auto 0;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+}
+form{
+    border: 1px solid black;
+    background-color: white;
+    display: block;
+    margin: 80px auto;
+}
+fieldset{
+    text-align: center;
+}
+
+/*Section*/
+
+/*О нас*/
+
+.section{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(214, 167, 37);
+    background-size: cover;
+    border: 30px solid black;
+}
+.section_header{
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    z-index: 1000;
+}
+.section_text_header{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.section_text_header:after{
+    content: "";
+    display: block;
+    margin: 10px auto 0;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+}
+.section_text{
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+}
+
+/*Помощь - на всякий случай*/
+
+.help_section{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(37, 214, 205);
+    background-size: cover;
+    border: 30px solid black;
+}
+.help_section_header{
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    z-index: 1000;
+}
+.help_section_text_header{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.help_section_text_header:after{
+    content: "";
+    display: block;
+    margin: 10px auto 0;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+}
+.help_section_text{
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+}
+
+/*Help_images*/
+
+.help_block{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 20px;
+}
+.item{
+    width: 380px;
+    background-color: rgb(3, 173, 173);
+}
+.item:hover .item_img img{
+    opacity: 0.3;
+    transform:translate3d(-5px, -5px, 0);
+}
+.item:hover .about_item{
+    opacity: 1;
+}
+.item_img img{
+    background: linear-gradient(to bottom, #fff, rgb(37, 214, 205));
+    transition: transform 0.1s;
+}
+.item_img img{
+    display: block;
+    transition: opacity 0.1s;
+}
+.about_item{
+    width: 33%;
+    opacity: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    
+    transition: opacity 0.1s;
+}
+
+/*Подписка*/
+
+.conteiner_pod
+{
+    background-color: rgb(70, 0, 136);
+}
